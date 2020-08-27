@@ -1,0 +1,33 @@
+.navbar-custom {
+  background-color: #223843;
+  opacity: 0.9;
+  /* position: fixed;
+  width: 100% */
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-brand {
+  font-size: 2rem;
+  color: #eae6f4 !important;
+}
+
+.link-text {
+    color: #cc945b !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(204,148,91)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+.custom-toggler {
+  border-color: #cc945b !important;
+}
+/* 
+  .navbar-toggler {
+    border-color: #9f612e !important;
+  } */

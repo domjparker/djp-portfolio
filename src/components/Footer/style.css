@@ -1,0 +1,13 @@
+.footer-custom {
+    background-color: #275360;
+    opacity: .9;
+    color: #eae6f4;
+    margin-top: auto;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    height: 4vh;
+    align-items: center;
+  }

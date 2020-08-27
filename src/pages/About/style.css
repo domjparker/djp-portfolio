@@ -1,0 +1,21 @@
+/* About Page/About Me section */
+.section {
+  background-color: rgba(223, 232, 241, 0.5);
+  color: #223843;
+  font-size: large;
+}
+
+.profileImage {
+  max-width: 100% !important;
+}
+
+.icons {
+  font-size: 40px;
+  padding: 0;
+  color: #223843;
+  align-items: flex-end;
+}
+
+.icons:hover {
+  color: #275360;
+}
