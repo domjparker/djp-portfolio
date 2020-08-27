@@ -24,11 +24,11 @@ function Portfolio() {
                 </Row>
                 {/* first portfolio row  */}
                 <Row>
-                  {/* DrawScape promo  */}
+                  {/* GuideMe promo  */}
                   <Col lg={4} md={6} sm={12}>
-                    <Link href="https://drawscape.herokuapp.com/" target="_blank">
+                    <Link href="https://guidemedimma.herokuapp.com/" target="_blank">
                       <img
-                        src="../Assets/Images/DrawScape.png"
+                        src="../Assets/Images/GuideMe.png"
                         className="img-fluid rounded"
                         alt="Responsive image"
                       />
@@ -44,7 +44,30 @@ function Portfolio() {
                       target="_blank"
                       className="captionButtons btn btn-sm btn-block mb-4"
                     >
-                      Drawscape is an application that allows users to draw online
+                      GuideMe is an application that helps explorers and guides connect so that more people can enjoy the outdoors.
+                    </Link>
+                  </Col>
+                  {/* DrawScape promo  */}
+                  <Col lg={4} md={6} sm={12}>
+                    <Link href="https://drawscape.herokuapp.com/" target="_blank">
+                      <img
+                        src="../Assets/Images/DrawScape.png"
+                        className="img-fluid rounded"
+                        alt="Responsive image"
+                      />
+                      <Link
+                        href="https://github.com/domjparker/GuideMe-FE.git"
+                        target="_blank"
+                      ><i className="fa fa-github-square"></i
+                      ></Link>
+                    </Link>
+                    <Link
+                      type="button"
+                      href="https://github.com/domjparker/GuideMe-FE.git"
+                      target="_blank"
+                      className="captionButtons btn btn-sm btn-block mb-4"
+                    >
+                      DrawScape is an application that allows users to draw online
                       in a fun, game environment, while messaging with friends and
                       family.
                     </Link>

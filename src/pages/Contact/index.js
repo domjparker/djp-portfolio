@@ -3,8 +3,8 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form"
-import InputGroup from "react-bootstrap/InputGroup"
 import "./style.css";
+import { Button } from "react-bootstrap";
 
 
 function Contact() {
@@ -27,7 +27,7 @@ function Contact() {
                                         {/* form inputs */}
                                         <Form>
                                             {/* name input */}
-                                            <div className="form-group">
+                                            <Form.Group>
                                                 <label for="exampleFormControlInput1">Name</label>
                                                 <input
                                                     type="email"
@@ -35,9 +35,9 @@ function Contact() {
                                                     id="exampleFormControlInput1"
                                                     placeholder="John Smith"
                                                 />
-                                            </div>
+                                            </Form.Group>
                                             {/* email address input */}
-                                            <div className="form-group">
+                                            <Form.Group>
                                                 <label for="exampleFormControlInput2"
                                                 >Email address</label
                                                 >
@@ -47,22 +47,23 @@ function Contact() {
                                                     id="exampleFormControlInput2"
                                                     placeholder="name@example.com"
                                                 />
-                                            </div>
+                                            </Form.Group>
                                             {/* message input */}
-                                            <div className="form-group">
+                                            <Form.Group>
                                                 <label for="exampleFormControlTextarea1">Message</label>
                                                 <textarea
                                                     className="form-control"
                                                     id="exampleFormControlTextarea1"
                                                     rows="7"
                                                 ></textarea>
-                                            </div>
+                                            </Form.Group>
                                             {/* submit button */}
-                                            <input
+                                            <Button
                                                 className="btn btn-custom"
                                                 type="submit"
-                                                value="Submit"
-                                            />
+                                                value="Submit">
+                                                    Submit
+                                            </Button>
                                         </Form>
                                     </Col>
                                 </Row>

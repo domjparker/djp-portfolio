@@ -1,6 +1,7 @@
 .navbar-custom {
   background-color: #223843;
   opacity: 0.9;
+  height: 8vh;
   /* position: fixed;
   width: 100% */
 }
