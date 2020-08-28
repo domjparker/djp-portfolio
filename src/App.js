@@ -10,8 +10,8 @@ import Footer from './components/Footer'
 function App() {
   return (
     <Router>
-      <>
       <Navbar />
+      <div className="flex-wrapper">
       <Switch>
         <Route exact path = "/">
           <About />
@@ -24,7 +24,7 @@ function App() {
         </Route>
       </Switch>
       <Footer />
-      </>
+      </div>
     </Router>
   );
 }

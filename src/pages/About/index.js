@@ -1,13 +1,23 @@
-import React, { useState, useEffect } from "react";
-import Container from "react-bootstrap/Container"
-import Row from "react-bootstrap/Row"
-import Col from "react-bootstrap/Col"
+import React from "react";
+// import { Document, Outline, Page } from 'react-pdf';
+// import resume from './public/assets/pdf/resumeDJP.pdf';
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import { Link } from "react-router-dom";
-import "./style.css"
+import "./style.css";
+
 
 
 
 function About() {
+
+  // const [pageNumber, setPageNumber] = useState(1);
+
+  // function onItemClick({ pageNumber: itemPageNumber }) {
+  //   setPageNumber(itemPageNumber);
+  // }
+
   return (
     <>
       <Container className="my-5">
@@ -15,7 +25,7 @@ function About() {
           <Col md={1}></Col>
           <Col md={10}>
             {/* About Me Card */}
-            <section>
+            <section className="top-section">
               <div className="card section card-body border-0">
                 <Row>
                   <Col md={12}>
@@ -27,7 +37,7 @@ function About() {
                     <img
                       className="img-fluid profileImage mr-4 mb-2 rounded"
                       src="Assets/Images/profilePicColor.png"
-                      alt="image of Dominic Parker"
+                      alt="Dominic Parker"
                     />
                   </Col>
                   <Col md={7}>
@@ -66,14 +76,17 @@ function About() {
 
             <br /><br />
             {/* Resumé */}
-            {/* <section>
-              <iframe
-                class="resume-window"
-                src="Assets/pdfs/resumé.pdf"
+            {/* <Document file={resume}>
+              <Outline onItemClick={onItemClick} />
+              <Page pageNumber={pageNumber || 1} /> */}
+              {/* <iframe
+                class="resume"
+                src="../../public/Assets/pdfs/resume
+                DJP.pdf"
                 width="100%"
                 height="800px"
-              ></iframe>
-            </section> */}
+              ></iframe> */}
+            {/* </Document> */}
           </Col>
           <Col md={1}></Col>
         </Row>

@@ -1,13 +1,13 @@
-.footer-custom {
+Footer {
     background-color: #275360;
     opacity: .9;
     color: #eae6f4;
     margin-top: auto;
-    position: fixed;
+    position: relative;
     width: 100%;
     display: flex;
     justify-content: center;
     bottom: 0;
-    height: 4vh;
+    height: 5vh;
     align-items: center;
   }

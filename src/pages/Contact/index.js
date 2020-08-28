@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -8,6 +8,28 @@ import { Button } from "react-bootstrap";
 
 
 function Contact() {
+
+    const [formObject, setFormObject] = useState({
+        name: "",
+        email: "",
+        message: ""
+    })
+
+    const handleInputChange = (event) => {
+        setFormObject({ ...formObject, [event.target.name]: event.target.value })
+    }
+
+    const handleFormSubmit = (event) => {
+        event.preventDefault();
+        console.log(formObject)
+        // write code to send to nodemailer here
+        setFormObject({
+            name: "",
+            email: "",
+            message: ""
+        })
+    }
+
     return (
         <>
             <Container className="my-5">
@@ -25,36 +47,43 @@ function Contact() {
                                 <Row>
                                     <Col md={12}>
                                         {/* form inputs */}
-                                        <Form>
+                                        <Form onSubmit={handleFormSubmit}>
                                             {/* name input */}
                                             <Form.Group>
-                                                <label for="exampleFormControlInput1">Name</label>
+                                                <label>Name</label>
                                                 <input
-                                                    type="email"
+                                                    name="name"
+                                                    type="text"
                                                     className="form-control form-control-sm input-mysize"
                                                     id="exampleFormControlInput1"
                                                     placeholder="John Smith"
+                                                    value={formObject.name}
+                                                    onChange={handleInputChange}
                                                 />
                                             </Form.Group>
                                             {/* email address input */}
                                             <Form.Group>
-                                                <label for="exampleFormControlInput2"
-                                                >Email address</label
-                                                >
+                                                <label >Email address</label>
                                                 <input
+                                                    name="email"
                                                     type="email"
                                                     className="form-control form-control-sm"
                                                     id="exampleFormControlInput2"
                                                     placeholder="name@example.com"
+                                                    value={formObject.email}
+                                                    onChange={handleInputChange}
                                                 />
                                             </Form.Group>
                                             {/* message input */}
                                             <Form.Group>
-                                                <label for="exampleFormControlTextarea1">Message</label>
+                                                <label>Message</label>
                                                 <textarea
+                                                    name="message"
                                                     className="form-control"
                                                     id="exampleFormControlTextarea1"
                                                     rows="7"
+                                                    value={formObject.message}
+                                                    onChange={handleInputChange}
                                                 ></textarea>
                                             </Form.Group>
                                             {/* submit button */}
@@ -62,7 +91,7 @@ function Contact() {
                                                 className="btn btn-custom"
                                                 type="submit"
                                                 value="Submit">
-                                                    Submit
+                                                Submit
                                             </Button>
                                         </Form>
                                     </Col>

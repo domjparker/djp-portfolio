@@ -1,0 +1,10 @@
+.captionButtons {
+  background-color: rgba(223, 232, 241, 0);
+}
+
+.icon {
+  font-size: 30px;
+  padding: 3px;
+  color: #223843;
+  /* align-items: flex-end; */
+}

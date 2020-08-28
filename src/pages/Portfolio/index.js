@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
-import { Link } from "react-router-dom";
+import ProjectPromo from "../../components/ProjectPromo"
 import "./style.css"
 
 
@@ -25,194 +25,27 @@ function Portfolio() {
                 {/* first portfolio row  */}
                 <Row>
                   {/* GuideMe promo  */}
-                  <Col lg={4} md={6} sm={12}>
-                    <Link href="https://guidemedimma.herokuapp.com/" target="_blank">
-                      <img
-                        src="../Assets/Images/GuideMe.png"
-                        className="img-fluid rounded"
-                        alt="Responsive image"
-                      />
-                      <Link
-                        href="https://github.com/indyminhas/DrawScape.git"
-                        target="_blank"
-                      ><i className="fa fa-github-square"></i
-                      ></Link>
-                    </Link>
-                    <Link
-                      type="button"
-                      href="https://github.com/indyminhas/DrawScape.git"
-                      target="_blank"
-                      className="captionButtons btn btn-sm btn-block mb-4"
-                    >
-                      GuideMe is an application that helps explorers and guides connect so that more people can enjoy the outdoors.
-                    </Link>
-                  </Col>
+                  <ProjectPromo name={"GuideMe"} url={"https://guidemedimma.herokuapp.com/"} imageSrc={"../Assets/Images/GuideMe.png"} githubHref={"https://github.com/domjparker/GuideMe-FE.git"} projectTagline={"GuideMe is a Full Stack application built using ReactJS and MongoDB. It helps explorers and guides connect so that more people can enjoy the outdoors."} />
+
                   {/* DrawScape promo  */}
-                  <Col lg={4} md={6} sm={12}>
-                    <Link href="https://drawscape.herokuapp.com/" target="_blank">
-                      <img
-                        src="../Assets/Images/DrawScape.png"
-                        className="img-fluid rounded"
-                        alt="Responsive image"
-                      />
-                      <Link
-                        href="https://github.com/domjparker/GuideMe-FE.git"
-                        target="_blank"
-                      ><i className="fa fa-github-square"></i
-                      ></Link>
-                    </Link>
-                    <Link
-                      type="button"
-                      href="https://github.com/domjparker/GuideMe-FE.git"
-                      target="_blank"
-                      className="captionButtons btn btn-sm btn-block mb-4"
-                    >
-                      DrawScape is an application that allows users to draw online
-                      in a fun, game environment, while messaging with friends and
-                      family.
-                    </Link>
-                  </Col>
+                  <ProjectPromo name={"DrawScape"} url={"https://drawscape.herokuapp.com/"} imageSrc={"../Assets/Images/DrawScape.png"} githubHref={"https://github.com/domjparker/GuideMe-FE.git"} projectTagline={"DrawScape is a Full Stack application built using Handlebars, Socket.io, and MySQL. It allows users to draw online in a fun, game environment, while messaging with friends and family."} />
+
                   {/* BrewFinder promo  */}
-                  <Col lg={4} md={6} sm={12}>
-                    <Link
-                      href="https://domjparker.github.io/brewfinder/"
-                      target="_blank"
-                    >
-                      <img
-                        src="../Assets/Images/brewfinder.png"
-                        className="img-fluid rounded"
-                        alt="Responsive image"
-                      />
-                      <Link
-                        href="https://github.com/domjparker/brewfinder.git"
-                        target="_blank"
-                      ><i className="fa fa-github-square"></i
-                      ></Link>
-                    </Link>
-                    <Link
-                      type="button"
-                      href="https://github.com/domjparker/brewfinder.git"
-                      target="_blank"
-                      className="captionButtons btn btn-sm btn-block mb-4"
-                    >
-                      BrewFinder is an application that queries a Brewery API and
-                      a mapping API so that you can find brewery establishments
-                      across the U.S.
-                  </Link>
-                  </Col>
+                  <ProjectPromo name={"BrewFinder"} url={"https://domjparker.github.io/brewfinder/"} imageSrc={"../Assets/Images/brewfinder.png"} githubHref={"https://github.com/domjparker/brewfinder.git"} projectTagline={"BrewFinder is an application built using Materialize and Open Street Map. It integrates a Brewery API and a mapping API so that you can find brewery establishments across the U.S."} />
+
+
                   {/* Question Quiz promo  */}
-                  <Col lg={4} md={6} sm={12}>
-                    <Link
-                      href="https://domjparker.github.io/question-quiz/"
-                      target="_blank"
-                    >
-                      <img
-                        src="../Assets/Images/questionquiz.png"
-                        className="img-fluid rounded"
-                        alt="Responsive image"
-                      />
-                      <Link
-                        href="https://github.com/domjparker/question-quiz.git"
-                        target="_blank"
-                      ><i className="fa fa-github-square"></i
-                      ></Link>
-                    </Link>
-                    <Link
-                      type="button"
-                      href="https://github.com/domjparker/question-quiz.git"
-                      target="_blank"
-                      className="captionButtons btn btn-sm btn-block mb-4"
-                    >
-                      Question Quiz is a quiz game incorporating Javascript DOM
-                      manipulation to dynamically add elements and features to the
-                      browser.
-                  </Link>
-                  </Col>
+                  <ProjectPromo name={"Question Quiz"} url={"https://domjparker.github.io/question-quiz/"} imageSrc={"../Assets/Images/questionquiz.png"} githubHref={"https://github.com/domjparker/question-quiz.git"} projectTagline={"Question Quiz is a quiz game incorporating Javascript DOM manipulation to dynamically add elements and features to the browser."} />
+
                   {/* Weather Dashboard promo  */}
-                  <Col lg={4} md={6} sm={12}>
-                    <Link
-                      href="https://domjparker.github.io/weather-dashboard/"
-                      target="_blank"
-                    >
-                      <img
-                        src="../Assets/Images/weatherdashboard.png"
-                        className="img-fluid rounded"
-                        alt="Responsive image"
-                      />
-                      <Link
-                        href="https://github.com/domjparker/weather-dashboard.git"
-                        target="_blank"
-                      ><i className="fa fa-github-square"></i
-                      ></Link>
-                    </Link>
-                    <Link
-                      type="button"
-                      href="https://github.com/domjparker/weather-dashboard.git"
-                      target="_blank"
-                      className="captionButtons btn btn-sm btn-block mb-4"
-                    >
-                      Weather Dashboard is an application using jQuery to append
-                      data retrieved from a weather API.
-                  </Link>
-                  </Col>
-                
+                  <ProjectPromo name={"Weather Dashboard"} url={"https://domjparker.github.io/weather-dashboard/"} imageSrc={"../Assets/Images/weatherdashboard.png"} githubHref={"https://github.com/domjparker/weather-dashboard.git"} projectTagline={"Weather Dashboard is an application using jQuery to append data retrieved from a weather API."} />
+
                   {/* NoteSaver promo  */}
-                  <Col lg={4} md={6} sm={12}>
-                    <Link
-                      href="https://note-saver-djp.herokuapp.com/"
-                      target="_blank"
-                    >
-                      <img
-                        src="../Assets/Images/NoteSaver.png"
-                        className="img-fluid rounded"
-                        alt="Responsive image"
-                      />
-                      <Link
-                        href="https://github.com/domjparker/noteSaver.git"
-                        target="_blank"
-                      ><i className="fa fa-github-square"></i
-                      ></Link>
-                    </Link>
-                    <Link
-                      type="button"
-                      href="https://github.com/domjparker/noteSaver.git"
-                      target="_blank"
-                      className="captionButtons btn btn-sm btn-block mb-4"
-                    >
-                      NoteSaver is an application that allows a user to write,
-                      save, and delete notes so they can keep track of ToDos,
-                      thoughts, etc.
-                  </Link>
-                  </Col>
+                  <ProjectPromo name={"NoteSaver"} url={"https://note-saver-djp.herokuapp.com/"} imageSrc={"../Assets/Images/NoteSaver.png"} githubHref={"https://github.com/domjparker/noteSaver.git"} projectTagline={"NoteSaver is an application that allows a user to write, save, and delete notes so they can keep track of ToDos, thoughts, etc."} />
+                  
                   {/* Employee Track App promo  */}
-                  <Col lg={4} md={6} sm={12}>
-                    <Link
-                      href="https://github.com/domjparker/Dev-Team-Generator-CLI-Application-.git"
-                      target="_blank"
-                    >
-                      <img
-                        src="../Assets/Images/EmployeeTrackApp.png"
-                        className="img-fluid rounded"
-                        alt="Responsive image"
-                      />
-                      <Link
-                        href="https://github.com/domjparker/Dev-Team-Generator-CLI-Application-.git"
-                        target="_blank"
-                      ><i className="fa fa-github-square"></i
-                      ></Link>
-                    </Link>
-                    <Link
-                      type="button"
-                      href="https://github.com/domjparker/Dev-Team-Generator-CLI-Application-.git"
-                      target="_blank"
-                      className="captionButtons btn btn-sm btn-block mb-4"
-                    >
-                      Dev Team Generator CLI is a Node.js application that asks
-                      the user what team members are part of their team, and then
-                      takes their response and creates an HTML file with a
-                      compiled view of this team.
-                  </Link>
-                  </Col>
+                  <ProjectPromo name={"Employee Track App"} url={"https://github.com/domjparker/Dev-Team-Generator-CLI-Application-.git"} imageSrc={"../Assets/Images/EmployeeTrackApp.png"} githubHref={"https://github.com/domjparker/Dev-Team-Generator-CLI-Application-.git"} projectTagline={"Dev Team Generator CLI is a Node.js application that asks the user what team members are part of their team, and then takes their response and creates an HTML file with a compiled view of this team."} />
+
                 </Row>
               </div>
             </section>
