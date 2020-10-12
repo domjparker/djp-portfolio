@@ -19,7 +19,7 @@
 }
 
 .link-text {
-    color: #cc945b !important;
+  color: #cc945b !important;
 }
 
 .navbar-toggler-icon {
@@ -29,7 +29,11 @@
 .custom-toggler {
   border-color: #cc945b !important;
 }
-/* 
-  .navbar-toggler {
-    border-color: #9f612e !important;
-  } */
+
+/* .navbar-toggler {
+  border-color: #9f612e !important;
+} */
+
+#basic-navbar-nav {
+  background-color:#223843;
+}

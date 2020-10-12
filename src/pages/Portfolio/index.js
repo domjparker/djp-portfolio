@@ -19,7 +19,7 @@ function Portfolio() {
                 {/* section title row  */}
                 <Row>
                   <Col md={12}>
-                    <h2 className="card-title">Portfolio</h2>
+                    <h1 className="card-title">Portfolio</h1>
                   </Col>
                 </Row>
                 {/* first portfolio row  */}
@@ -28,7 +28,7 @@ function Portfolio() {
                   <ProjectPromo name={"GuideMe"} url={"https://guidemedimma.herokuapp.com/"} imageSrc={"../Assets/Images/GuideMe.png"} githubHref={"https://github.com/domjparker/GuideMe-FE.git"} projectTagline={"GuideMe is a Full Stack application built using ReactJS and MongoDB. It helps explorers and guides connect so that more people can enjoy the outdoors."} />
 
                   {/* DrawScape promo  */}
-                  <ProjectPromo name={"DrawScape"} url={"https://drawscape.herokuapp.com/"} imageSrc={"../Assets/Images/DrawScape.png"} githubHref={"https://github.com/domjparker/GuideMe-FE.git"} projectTagline={"DrawScape is a Full Stack application built using Handlebars, Socket.io, and MySQL. It allows users to draw online in a fun, game environment, while messaging with friends and family."} />
+                  <ProjectPromo name={"DrawScape"} url={"https://drawscape.herokuapp.com/"} imageSrc={"../Assets/Images/DrawScape.png"} githubHref={"https://github.com/domjparker/DrawScape.git"} projectTagline={"DrawScape is a Full Stack application built using Handlebars, Socket.io, and MySQL. It allows users to draw online in a fun, game environment, while messaging with friends and family."} />
 
                   {/* BrewFinder promo  */}
                   <ProjectPromo name={"BrewFinder"} url={"https://domjparker.github.io/brewfinder/"} imageSrc={"../Assets/Images/brewfinder.png"} githubHref={"https://github.com/domjparker/brewfinder.git"} projectTagline={"BrewFinder is an application built using Materialize and Open Street Map. It integrates a Brewery API and a mapping API so that you can find brewery establishments across the U.S."} />

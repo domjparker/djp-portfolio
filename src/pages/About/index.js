@@ -1,6 +1,6 @@
 import React from "react";
-// import { Document, Outline, Page } from 'react-pdf';
-// import resume from './public/assets/pdf/resumeDJP.pdf';
+// import { Document } from 'react-pdf';
+// import resume from './public/assets/pdfs/resumeDJP.pdf';
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -29,7 +29,7 @@ function About() {
               <div className="card section card-body border-0">
                 <Row>
                   <Col md={12}>
-                    <h2 className="card-title">About Me</h2>
+                    <h1 className="card-title">About Me</h1>
                   </Col>
                 </Row>
                 <Row>
@@ -76,9 +76,9 @@ function About() {
 
             <br /><br />
             {/* Resumé */}
-            {/* <Document file={resume}>
-              <Outline onItemClick={onItemClick} />
-              <Page pageNumber={pageNumber || 1} /> */}
+            {/* <Document file={resume}> */}
+              {/* <Outline onItemClick={onItemClick} /> */}
+              {/* <Page pageNumber={pageNumber || 1} /> */}
               {/* <iframe
                 class="resume"
                 src="../../public/Assets/pdfs/resume

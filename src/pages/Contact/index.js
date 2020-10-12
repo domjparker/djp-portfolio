@@ -9,26 +9,26 @@ import { Button } from "react-bootstrap";
 
 function Contact() {
 
-    const [formObject, setFormObject] = useState({
-        name: "",
-        email: "",
-        message: ""
-    })
+    // const [formObject, setFormObject] = useState({
+    //     name: "",
+    //     email: "",
+    //     message: ""
+    // })
 
-    const handleInputChange = (event) => {
-        setFormObject({ ...formObject, [event.target.name]: event.target.value })
-    }
+    // const handleInputChange = (event) => {
+    //     setFormObject({ ...formObject, [event.target.name]: event.target.value })
+    // }
 
-    const handleFormSubmit = (event) => {
-        event.preventDefault();
-        console.log(formObject)
-        // write code to send to nodemailer here
-        setFormObject({
-            name: "",
-            email: "",
-            message: ""
-        })
-    }
+    // const handleFormSubmit = (event) => {
+    //     event.preventDefault();
+    //     console.log(formObject)
+    //     // write code to send to nodemailer here
+    //     setFormObject({
+    //         name: "",
+    //         email: "",
+    //         message: ""
+    //     })
+    // }
 
     return (
         <>
@@ -41,14 +41,18 @@ function Contact() {
                             <div className="card section card-body border-0">
                                 <Row>
                                     <Col md={12}>
-                                        <h2 className="card-title">Contact</h2>
+                                        <h1 className="card-title">Contact</h1>
                                     </Col>
                                 </Row>
                                 <Row>
                                     <Col md={12}>
+                                        <h5>To get in touch, I can be reached at the following email:</h5>
+                                        <br></br>
+                                        {/* <h5>dominic.j.parker@gmail.com</h5> */}
+                                        <a href="mailto:dominic.j.parker@gmail.com" target="_blank" rel="noopener noreferrer">dominic.j.parker@gmail.com</a>
                                         {/* form inputs */}
-                                        <Form onSubmit={handleFormSubmit}>
-                                            {/* name input */}
+                                        {/* <Form onSubmit={handleFormSubmit}>
+                                            name input
                                             <Form.Group>
                                                 <label>Name</label>
                                                 <input
@@ -61,7 +65,7 @@ function Contact() {
                                                     onChange={handleInputChange}
                                                 />
                                             </Form.Group>
-                                            {/* email address input */}
+                                            email address input
                                             <Form.Group>
                                                 <label >Email address</label>
                                                 <input
@@ -74,7 +78,7 @@ function Contact() {
                                                     onChange={handleInputChange}
                                                 />
                                             </Form.Group>
-                                            {/* message input */}
+                                            {message input
                                             <Form.Group>
                                                 <label>Message</label>
                                                 <textarea
@@ -85,15 +89,15 @@ function Contact() {
                                                     value={formObject.message}
                                                     onChange={handleInputChange}
                                                 ></textarea>
-                                            </Form.Group>
+                                            </Form.Group> */}
                                             {/* submit button */}
-                                            <Button
+                                            {/* <Button
                                                 className="btn btn-custom"
                                                 type="submit"
                                                 value="Submit">
                                                 Submit
                                             </Button>
-                                        </Form>
+                                        </Form> */}
                                     </Col>
                                 </Row>
                             </div>
