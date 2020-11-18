@@ -33,7 +33,6 @@ function Portfolio() {
                   {/* BrewFinder promo  */}
                   <ProjectPromo name={"BrewFinder"} url={"https://domjparker.github.io/brewfinder/"} imageSrc={"../Assets/Images/brewfinder.png"} githubHref={"https://github.com/domjparker/brewfinder.git"} projectTagline={"BrewFinder is an application built using Materialize and Open Street Map. It integrates a Brewery API and a mapping API so that you can find brewery establishments across the U.S."} />
 
-
                   {/* Question Quiz promo  */}
                   <ProjectPromo name={"Question Quiz"} url={"https://domjparker.github.io/question-quiz/"} imageSrc={"../Assets/Images/questionquiz.png"} githubHref={"https://github.com/domjparker/question-quiz.git"} projectTagline={"Question Quiz is a quiz game incorporating Javascript DOM manipulation to dynamically add elements and features to the browser."} />
 
