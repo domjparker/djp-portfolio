@@ -1,5 +1,9 @@
 .promoNotBig {
+  transition: all 0.5s;
+}
 
+.promoNotBig:hover {
+  transform: scale(1.07);
 }
 
 /* .promoBig {

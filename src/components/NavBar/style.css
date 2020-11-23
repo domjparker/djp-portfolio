@@ -16,10 +16,20 @@
 .nav-brand {
   font-size: 2rem;
   color: #eae6f4 !important;
+  transition: all 0.5s;
+}
+
+.nav-brand:hover {
+  transform: scale(1.05);
 }
 
 .link-text {
   color: #cc945b !important;
+  transition: all 0.5s;
+}
+
+.link-text:hover {
+  transform: scale(1.2);
 }
 
 .navbar-toggler-icon {
